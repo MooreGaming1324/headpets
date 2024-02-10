@@ -5,7 +5,8 @@
  # Created by MooreGaming1324.
 ##
 
-
+##Pet Summon Detection
+execute as @e[type=item,nbt={Item:{tag:{hpet:{Pet:true}}}}] if entity @p[tag=!hpetActive] run function headpets:summon/check_pet
 
 
 
@@ -26,4 +27,4 @@ execute as @a[tag=hpetActive,scores={hpets.sneak=1..}] at @s as @e[tag=hpet,type
 scoreboard players set @a hpets.sprint 0
 scoreboard players set @a hpets.sneak 0
 scoreboard players set @a hpets.walk 0
-execute as @a at @s unless block ~ ~-.01 ~ air run scoreboard players set @s hpets.jump 0
+execute as @a at @s unless block ~ ~-.001 ~ air run scoreboard players set @s hpets.jump 0
