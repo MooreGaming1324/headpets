@@ -11,6 +11,8 @@ execute unless score .Idle hpet.temp matches 0.. run scoreboard players set .Idl
 scoreboard objectives add hpet.player_id dummy
 execute unless score .Next hpet.player_id matches 0.. run scoreboard players set .Next hpet.player_id 1
 scoreboard objectives add hpet.pet_id dummy
+scoreboard objectives add hpet.combat dummy
+
 #Option Configs
 scoreboard objectives add hpet.option.shoulder_hover dummy
 

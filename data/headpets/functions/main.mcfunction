@@ -19,8 +19,9 @@ execute as @a[scores={hpet_mount=1..}] run function headpets:trigger/mount
 execute as @a[tag=hpetActive,tag=hpetMount,scores={hpet.sneak=0}] at @s as @e[tag=hpet,type=armor_stand] if score @s hpet.pet_id = @p hpet.player_id run function headpets:modes/mount
 execute as @a[tag=hpetActive,tag=hpetMount,scores={hpet.sneak=1..}] run tag @s remove hpetMount
 #follow player when moving
-execute as @a[tag=hpetActive,tag=!hpetMount] at @s as @e[tag=hpet,type=armor_stand] if score @s hpet.pet_id = @p hpet.player_id run function headpets:modes/follow
-
+execute as @a[tag=hpetActive,tag=!hpetMount,tag=!hpetCombat] at @s as @e[tag=hpet,type=armor_stand] if score @s hpet.pet_id = @p hpet.player_id run function headpets:modes/follow
+#combat detection
+execute as @a[tag=hpetActive,tag=hpetCombat] at @s as @e[tag=hpet,type=armor_stand] if score @s hpet.pet_id = @p hpet.player_id run function headpets:modes/combat_hide
 
 ##Reset detection scoreboards
 scoreboard players set @a hpet.sprint 0
