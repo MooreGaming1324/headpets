@@ -1,5 +1,5 @@
 ##
- # slime.mcfunction
+ # main.mcfunction
  # 
  #
  # Created by MooreGaming1324.

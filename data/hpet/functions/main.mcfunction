@@ -5,13 +5,22 @@
  # Created by MooreGaming1324.
 ##
 
-##Pet Summon Detection
-execute as @e[type=item,nbt={Item:{tag:{hpet:{Pet:true}}}}] if data entity @s Thrower at @s run function hpet:summon/check_pet
+## Data Library
+#   tag:
+#       hpet:
+#           
 
 
-##Triggers
-scoreboard players enable @a hpet_mount
-execute as @a[scores={hpet_mount=1..}] run function hpet:trigger/mount
+
+## Players
+execute as @a at @s run function hpet:player/main
+
+## Item Summons
+execute as @e[predicate=hpet:entity/is_summon] if data entity @s Thrower at @s run function hpet:summon/main
+
+## Pets 
+execute as @e[predicate=hpet:entity/is_pet] at @s run function hpet:pet/main
+
 
 
 ##Mode Detection
