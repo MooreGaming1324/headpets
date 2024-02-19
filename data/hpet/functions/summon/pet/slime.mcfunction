@@ -18,7 +18,7 @@ data modify entity @e[type=text_display,tag=hpetTemp,sort=nearest,limit=1] text 
 
 ##Effects
 tellraw @p [{"text": "[","color": "yellow"},{"text": "✳","color": "aqua"},{"text": "] You summoned your Slime Pet!","color": "yellow"}]
-execute as @e[tag=hpet,type=armor_stand,sort=nearest,limit=1] run function headpets:summon/pet/effects
+execute as @e[tag=hpet,type=armor_stand,sort=nearest,limit=1] run function hpet:summon/pet/effects
 
 #Kill item
 kill @s

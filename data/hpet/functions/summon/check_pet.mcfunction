@@ -12,4 +12,4 @@
 
 
 #Slime
-execute if entity @s[nbt={Item:{tag:{hpet:{Type:1b}}}}] run function headpets:summon/pet/slime
+execute if entity @s[nbt={Item:{tag:{hpet:{Type:1b}}}}] run function hpet:summon/pet/slime

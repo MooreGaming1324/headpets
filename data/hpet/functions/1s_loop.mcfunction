@@ -4,7 +4,7 @@
  #
  # Created by MooreGaming1324.
 ##
-schedule function headpets:1s_loop 1s replace
+schedule function hpet:1s_loop 1s replace
 
 
 

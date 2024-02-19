@@ -15,7 +15,7 @@
       }
     },
     "rewards": {
-      "function": "headpets:trigger/combat"
+      "function": "hpet:trigger/combat"
     }
   }
   

@@ -18,15 +18,8 @@ scoreboard objectives add hpet.option.shoulder_hover dummy
 scoreboard objectives add hpet.option.sounds dummy
 
 
-##Player Detection Scoreboards
-scoreboard objectives add hpet.jump minecraft.custom:minecraft.jump
-scoreboard objectives add hpet.sprint minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add hpet.walk minecraft.custom:minecraft.walk_one_cm
-scoreboard objectives add hpet.sneak minecraft.custom:sneak_time
-
-
 ##Trigger Commands
 scoreboard objectives add hpet_mount trigger
 
 ##Start loops
-schedule function headpets:1s_loop 1t replace
+schedule function hpet:1s_loop 1t replace

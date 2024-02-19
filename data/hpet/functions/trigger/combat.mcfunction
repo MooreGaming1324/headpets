@@ -4,7 +4,7 @@
  #
  # Created by MooreGaming1324.
 ##
-advancement revoke @s only headpets:combat
+advancement revoke @s only hpet:combat
 
 tag @s add hpetCombat
 tag @s remove hpetMount

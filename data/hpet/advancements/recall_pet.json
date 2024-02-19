@@ -11,7 +11,7 @@
       }
     },
     "rewards": {
-      "function": "headpets:recall/check_pet"
+      "function": "hpet:recall/check_pet"
     }
   }
   
