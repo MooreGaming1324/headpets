@@ -15,6 +15,7 @@ scoreboard objectives add hpet.combat dummy
 
 #Option Configs
 scoreboard objectives add hpet.option.shoulder_hover dummy
+scoreboard objectives add hpet.option.sounds dummy
 
 
 ##Player Detection Scoreboards

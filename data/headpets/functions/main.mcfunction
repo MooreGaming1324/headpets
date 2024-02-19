@@ -6,7 +6,7 @@
 ##
 
 ##Pet Summon Detection
-execute as @e[type=item,nbt={Item:{tag:{hpet:{Pet:true}}}}] at @s if entity @p[tag=!hpetActive] run function headpets:summon/check_pet
+execute as @e[type=item,nbt={Item:{tag:{hpet:{Pet:true}}}}] if data entity @s Thrower at @s run function headpets:summon/check_pet
 
 
 ##Triggers
